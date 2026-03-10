@@ -38,7 +38,7 @@ def fetch_batches():
             pou_options = page.locator("select[name='ddlPou'] option").all_text_contents()
             delhi_val = None
             for opt in pou_options:
-                if "DELHI" in opt.upper():
+                if "GURUGRAM" in opt.upper():
                     delhi_val = opt.strip()
                     break
 
